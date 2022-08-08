@@ -12,5 +12,6 @@ TEST(PrinterTest, test_output_of_std_in_and_out) {
     ostringstream prompt;
     ostringstream output;
     Printer::run(fake_input, prompt, output);
-    EXPECT_EQ(expected_str, output.str());
+    auto actual = output.str();
+    EXPECT_EQ(actual, expected_str);
 }

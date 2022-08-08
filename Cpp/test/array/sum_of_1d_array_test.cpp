@@ -4,26 +4,43 @@
 
 #include "gtest/gtest.h"
 #include "array/sum_of_1d_array.h"
+#include "array/sum_of_1d_array.c"
 
+struct SumOf1DArray_test_data {
+    std::vector<int> numbers;
+    std::vector<int> result;
+};
 
-struct SumOf1DArrayTest : public testing::TestWithParam<std::tuple<std::vector<int>, std::vector<int>>> {
+struct SumOf1DArrayTest : public testing::TestWithParam<SumOf1DArray_test_data> {
 };
 
 INSTANTIATE_TEST_SUITE_P(
         SumOf1DArrayTestCases,
         SumOf1DArrayTest,
         testing::Values(
-                std::make_tuple(std::vector<int>{1, 1, 1, 1, 1}, std::vector<int>{1, 2, 3, 4, 5}),
-                std::make_tuple(std::vector<int>{1, 2, 3, 4}, std::vector<int>{1, 3, 6, 10}),
-                std::make_tuple(std::vector<int>{3, 1, 2, 10, 1}, std::vector<int>{3, 4, 6, 16, 17}
-                )
+                SumOf1DArray_test_data{{1, 1, 1, 1, 1},
+                                       {1, 2, 3, 4, 5}},
+                SumOf1DArray_test_data{{1, 2, 3, 4},
+                                       {1, 3, 6, 10}},
+                SumOf1DArray_test_data{{3, 1, 2, 10, 1},
+                                       {3, 4, 6, 16, 17}}
         )
 );
 
-TEST_P(SumOf1DArrayTest, SumOf1DArrayTestCase) {
-    auto numbers = std::get<0>(GetParam());
-    auto const& expected = std::get<1>(GetParam());
+TEST_P(SumOf1DArrayTest, SumOf1DArrayCppTestCase) {
+    auto numbers = GetParam().numbers;
+    auto const &expected = GetParam().result;
 
-    auto actual = SumOf1DArray().RunningSum(numbers);
+    auto actual = SumOf1DArray::RunningSum(numbers);
+    ASSERT_EQ(actual, expected);
+}
+
+TEST_P(SumOf1DArrayTest, SumOf1DArrayCTestCase) {
+    auto numbers = GetParam().numbers;
+    auto const &expected = GetParam().result;
+
+    int return_size;
+    int *result = runningSum(numbers.data(), numbers.size(), &return_size);
+    std::vector<int> actual(result, result + return_size);
     ASSERT_EQ(actual, expected);
 }

@@ -1,0 +1,10 @@
+<application>
+  <component name="ExportableFileTemplateSettings">
+    <default_templates>
+      <template name="Leetcode_Python.py" file-name="${Name.replaceAll(&quot;([a-z])([A-Z]+)&quot;,&quot;$1_$2&quot;).toLowerCase()}" reformat="true" live-template-enabled="false">
+        <template name="Leetcode_Python.py.child.0.py" file-name="test_${Name.replaceAll(&quot;([a-z])([A-Z]+)&quot;,&quot;$1_$2&quot;).toLowerCase()}" reformat="true" live-template-enabled="false" />
+      </template>
+      <template name="Leetcode_Python.py.child.0.py" file-name="test_${Name.replaceAll(&quot;([a-z])([A-Z]+)&quot;,&quot;$1_$2&quot;).toLowerCase()}" reformat="true" live-template-enabled="false" />
+    </default_templates>
+  </component>
+</application>

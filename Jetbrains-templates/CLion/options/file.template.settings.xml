@@ -1,0 +1,14 @@
+<application>
+  <component name="ExportableFileTemplateSettings">
+    <default_templates>
+      <template name="Leetcode_C_and_Cpp.h" file-name="${Name.replaceAll(&quot;([a-z])([A-Z]+)&quot;,&quot;$1_$2&quot;).toLowerCase()}" reformat="true" live-template-enabled="false">
+        <template name="Leetcode_C_and_Cpp.h.child.0.cpp" file-name="${Name.replaceAll(&quot;([a-z])([A-Z]+)&quot;,&quot;$1_$2&quot;).toLowerCase()}" reformat="true" live-template-enabled="false" />
+        <template name="Leetcode_C_and_Cpp.h.child.1.c" file-name="${Name.replaceAll(&quot;([a-z])([A-Z]+)&quot;,&quot;$1_$2&quot;).toLowerCase()}" reformat="true" live-template-enabled="false" />
+        <template name="Leetcode_C_and_Cpp.h.child.2.cpp" file-name="${Name.replaceAll(&quot;([a-z])([A-Z]+)&quot;,&quot;$1_$2&quot;).toLowerCase()}_test" reformat="true" live-template-enabled="false" />
+      </template>
+      <template name="Leetcode_C_and_Cpp.h.child.0.cpp" file-name="${Name.replaceAll(&quot;([a-z])([A-Z]+)&quot;,&quot;$1_$2&quot;).toLowerCase()}" reformat="true" live-template-enabled="false" />
+      <template name="Leetcode_C_and_Cpp.h.child.1.c" file-name="${Name.replaceAll(&quot;([a-z])([A-Z]+)&quot;,&quot;$1_$2&quot;).toLowerCase()}" reformat="true" live-template-enabled="false" />
+      <template name="Leetcode_C_and_Cpp.h.child.2.cpp" file-name="${Name.replaceAll(&quot;([a-z])([A-Z]+)&quot;,&quot;$1_$2&quot;).toLowerCase()}_test" reformat="true" live-template-enabled="false" />
+    </default_templates>
+  </component>
+</application>

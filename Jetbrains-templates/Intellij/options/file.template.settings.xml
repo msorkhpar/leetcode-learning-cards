@@ -1,0 +1,10 @@
+<application>
+  <component name="ExportableFileTemplateSettings">
+    <default_templates>
+      <template name="Leetcode_Kotlin.kt" file-name="${Name}" reformat="true" live-template-enabled="false">
+        <template name="Leetcode_Kotlin.kt.child.0.kt" file-name="${Name}Test" reformat="true" live-template-enabled="false" />
+      </template>
+      <template name="Leetcode_Kotlin.kt.child.0.kt" file-name="${Name}Test" reformat="true" live-template-enabled="false" />
+    </default_templates>
+  </component>
+</application>

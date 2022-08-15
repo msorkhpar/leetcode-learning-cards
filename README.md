@@ -1,8 +1,8 @@
 # leetcode-learning-cards
 This repo contains all the problems that need to be coded from leetcode learning cards.
 
-- [ ] https://leetcode.com/explore/learn/card/the-leetcode-beginners-guide/ :writing_hand:	
-- [ ] https://leetcode.com/explore/learn/card/fun-with-arrays/
+- [X] https://leetcode.com/explore/learn/card/the-leetcode-beginners-guide/
+- [ ] https://leetcode.com/explore/learn/card/fun-with-arrays/ :writing_hand:	
 - [ ] https://leetcode.com/explore/learn/card/array-and-string/
 - [ ] https://leetcode.com/explore/learn/card/linked-list/
 - [ ] https://leetcode.com/explore/learn/card/hash-table/
